@@ -9,7 +9,7 @@ let empty;                    //undefined
 let nullObject = null;        //object
 let summa = function(a,b){console.log(`${a} + ${b} = ${a+b}`)}//function
 let array = [1,2,3, true, false, "red","green",[10,11,12],summa];//object
-
+empty = 5;
 console.log(number);
 console.log(typeof(number));
 console.log(`Number : ${number}. Type : ${typeof(number)}`);
