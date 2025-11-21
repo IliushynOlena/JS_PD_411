@@ -1,6 +1,16 @@
 
 let obj = new Object();
 //-----------------1 ----------------
+// console.log(`a: ${a}`)
+// let a = 5;
+// console.log(`a: ${a}`)
+
+// let a = "hello";
+// console.log(`a: ${a}`)
+
+// let a = true;
+// console.log(`a: ${a}`)
+
 var array = new Array();
 console.log(`Length : ${array.length}`)
 array[0] = 100;
@@ -36,9 +46,11 @@ for (let i = 0; i < array.length; i++) {
 // }
 
 //------------- 2 - forEach - -------------
-
+array.forEach(() =>{
+     console.log(`Element  *********  `)  
+})
 array.forEach((el) =>{
-     console.log(`Element  ${elem}`)  
+     console.log(`Element  ${el}`)  
 })
 
 array.forEach((elem, index)=>
@@ -82,6 +94,7 @@ console.log("Index of first find element : ",array.lastIndexOf(6));//if not foun
 //------ find - found first element by conditions
 console.log("Found : ",array.find((el)=> el < 0));
 
+
 //------------- Sort array --------------
 array.sort();
 console.log("Array after defeault sort : ",array)
@@ -105,10 +118,18 @@ console.log("Array after defeault sort : ",array)
 //--- get copy array
 var copy = array.slice(2,array.length-2);
 console.log("copy : ",copy)
-
-array = [4,6,7,8,1,-4,0,99];
-const filtered = array.filter((el) => el%2 == 0);
+console.log("------------------------------------------------: ")
+let array1 = [4,6,7,8,1,-4,0,99];
+array1 = [];
+const filtered = array1.filter((el) => el%2 == 0);
 console.log("Filtered array : ",filtered)
+array1[0] = 1000;
+console.log(array1[0]);
+
+
+const pi = "3.14";
+pi = "100";
+
 
 
 
