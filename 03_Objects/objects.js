@@ -7,8 +7,10 @@ var obj = {};
 //add new property
 obj.name = "Olga";
 console.log(`Name : ${obj.name}`);
+
 obj.name = "Nazar";
 console.log(`Name : ${obj.name}`);
+
 obj.age = 15;
 obj.address = "Rivne";
 console.log(`address : ${obj.address}`);
