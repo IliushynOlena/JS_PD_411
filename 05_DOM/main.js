@@ -2,8 +2,9 @@ document.write("<p>Hello world!</p>");
 
 const tableBody = document.getElementById('table-body');
 const createBtn = document.getElementById('add-btn');
+const deleteBtn = document.getElementById('delete-btn');
 
-const products = [];
+let products = [];
 
 function getProductFromForm()
 {
@@ -30,3 +31,8 @@ createBtn.onclick = ()=>{
                             <td>${product.price}$</td>
                         </tr>   `;
 } 
+
+deleteBtn.onclick=()=>{
+    products = [];
+    tableBody.innerHTML = "";
+}
