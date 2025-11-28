@@ -55,7 +55,7 @@
     <div class="container mt-4">
         <form>
             <fieldset>
-                <h1>Create Product</h1>
+                <h1 class="text-center">Create Product</h1>
                 <div class="row">
                     <div class="col-4">
                         <label for="modelInput" class="form-label mt-4">Model</label>
@@ -74,14 +74,37 @@
                             autocomplete="off">
                     </div>
                 </div>
-                <button type="button" class="btn btn-success mt-2">Success</button>
-
-
-
 
         </form>
-    </div>
+        <button type="button" class="btn btn-success mt-2" id="add-btn">Add Product</button>
+        <h2 class="text-center mt-3" >Product List</h2>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Model</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Price</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <tr class="table-info">
+                    <th scope="row">1</td>
+                    <td>IPhone</td>
+                    <td>Some information</td>
+                    <td>467$</td>
+                </tr>
+                <tr class="table-info">
+                    <td scope="row">2</td>
+                    <td>Samsung</td>
+                    <td>Some information</td>
+                    <td>15000$</td>
+                </tr>
 
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
 </body>
 
 </html>
